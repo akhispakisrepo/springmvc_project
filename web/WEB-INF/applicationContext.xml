@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="SmsGatewayService" class="main.java.SmsGatewayService">
+        <property name="validateBDMobileNumber">
+            <list>
+                <value>011</value>
+                <value>013</value>
+                <value>014</value>
+                <value>015</value>
+                <value>016</value>
+                <value>017</value>
+                <value>018</value>
+                <value>019</value>
+            </list>
+        </property>
+    </bean>
+</beans>
